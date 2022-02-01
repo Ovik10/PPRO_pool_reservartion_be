@@ -8,7 +8,7 @@
         <version>2.2.2.RELEASE</version>
         <relativePath/> <!-- lookup parent from repository -->
     </parent>
-    <groupId>cz.ppro.gymapp</groupId>
+    <groupId>cz.ppro.poolapp</groupId>
     <artifactId>be</artifactId>
     <version>0.0.1-SNAPSHOT</version>
     <name>be</name>
@@ -70,7 +70,7 @@
                 <groupId>org.springframework.boot</groupId>
                 <artifactId>spring-boot-maven-plugin</artifactId>
                 <configuration>
-                    <finalName>gymapp</finalName>
+                    <finalName>poolapp</finalName>
                 </configuration>
             </plugin>
         </plugins>

@@ -45,15 +45,6 @@ public class CourseController {
     public List<Course> getAllByTrainer(@RequestAttribute String trainerLogin){
         return courseRepository.findAllByTrainerLogin(trainerLogin);
     }
-    @RequestMapping(value = "/allByClient/{clientLogin}", method = RequestMethod.GET)
-    public List<Course> getAllByClient(@PathVariable(value = "clientLogin") String clientLogin){
-        List<AccountSignedCourse> accountSignedCourses = accountSignedCourseRepository.findAllByClientLogin(clientLogin);
-        List<Course> courses = new ArrayList<>();
-        for ( AccountSignedCourse acs : accountSignedCourses){
-            courses.add(acs.getCourse());
-        }
-        return courses;
-    }
 
     @RequestMapping(value = "/detail/{id}", method = RequestMethod.GET)
     public Course getById(@PathVariable(value = "id") Long id){

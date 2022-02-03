@@ -12,7 +12,7 @@ import org.springframework.web.bind.annotation.*;
 import javax.validation.Valid;
 import java.util.List;
 
-@CrossOrigin
+@CrossOrigin(origins = "http://localhost:3006")
 @RequestMapping("/ticketTypes")
 @RestController
 public class TicketTypeController {

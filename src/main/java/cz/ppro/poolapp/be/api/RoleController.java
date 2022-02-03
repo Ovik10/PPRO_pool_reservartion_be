@@ -13,7 +13,7 @@ import org.springframework.web.server.ResponseStatusException;
 import javax.validation.Valid;
 import java.util.List;
 
-@CrossOrigin(origins = "http://localhost:3000")
+@CrossOrigin(origins = "http://localhost:3006")
 @RequestMapping("/roles")
 @RestController
 public class RoleController {
